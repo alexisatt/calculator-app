@@ -1,0 +1,75 @@
+.container{
+  justify-content: center;
+  padding: 50px 0;
+  margin: 2rem auto;
+  border-radius: 40px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(6rem, auto) repeat(4, 5rem);
+  justify-content: center;
+}
+
+.buttons > button {
+
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+
+  margin: 5px;
+  color: #8d8d8d;
+}
+.ac {
+  color: #fbfbfb!important;
+  background: #a12121 !important;
+}
+
+.buttons > button:hover {
+  background-color: rgb(42, 41, 41)
+}
+
+.buttons > button:focus{
+  margin: 6px;
+}
+
+.span-two{
+  grid-column: span 2;
+}
+
+.output{
+  width: 80%;
+  background-color: rgb(0, 0, 0 / 75%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.output {
+  width: 32%;
+  background-color: rgba(177, 174, 174, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin: 2rem auto;
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  color: #fff;
+  font-size: 24px;
+  text-align: right;
+}
+
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
